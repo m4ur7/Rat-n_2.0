@@ -2,18 +2,28 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	password: /^.{8,16}$/, // 8 a 16 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	direccion: /^[a-zA-ZÀ-ÿ\s]{6,80}$/, // Letras y espacios, pueden llevar acentos.
+	codigopostal: /^\d{5,5}$/, // 5 numeros.
+	ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	pais: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	telefono: /^\d{7,16}$/ // 7 a 14 numeros.
 }
 
 const campos = {
-	usuario: false,
 	nombre: false,
+	apellidos: false,
+	usuario: false,
 	password: false,
 	correo: false,
+	direccion: false,
+	codigopostal: false,
+	ciudad: false,
+	pais: false
 	telefono: false,
 }
 
