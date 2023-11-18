@@ -49,6 +49,9 @@ ul {
     flex: 1; 
     margin-left: 50px;
 }
+.nav-menu-right span {
+    margin: 10px;
+}
 #cuenta-carrito {
     padding: 15px;
     background-color: #ae6bf2;
@@ -347,16 +350,31 @@ footer {
 /* Cart */
 
 
-
-
+/*Media Query 1180*/
+@media (max-width:1220px) {
+    
+.nav-main ul li {
+    padding: 5px;
+}
+   
+.nav-main ul.nav-menu {
+    flex: 1; 
+    margin-left: 5px;
+}
+    
+    /*.nav-menu-right span {
+    float: right;
+    }*/
+}
 /*Media Query 850*/
 
-@media (max-width: 850px) {
+@media (max-width: 910px) {
     .nav-menu-right {
-        font-size: 14px;
+        font-size: 11px;
     }
     .menu-btn {
         display: block;
+        margin: 0px -5px;
 
     }
     .nav-main ul.nav-menu {
@@ -443,6 +461,9 @@ footer {
         padding: 15px;
         font-size: 11px;
 
+    }
+    .nav-menu-right span {
+        margin: 60px;
     }
     .container-slider {
         width: 90%;
