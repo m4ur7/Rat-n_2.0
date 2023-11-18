@@ -359,7 +359,7 @@ footer {
    
 .nav-main ul.nav-menu {
     flex: 1; 
-    margin-left: 5px;
+    margin-left: 45px;
 }
     
     /*.nav-menu-right span {
@@ -368,13 +368,13 @@ footer {
 }
 /*Media Query 850*/
 
-@media (max-width: 910px) {
+@media (max-width: 950px) {
     .nav-menu-right {
         font-size: 11px;
     }
     .menu-btn {
         display: block;
-        margin: 0px -5px;
+        margin: 0px -10px;
 
     }
     .nav-main ul.nav-menu {
