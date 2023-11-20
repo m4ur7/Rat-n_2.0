@@ -42,8 +42,8 @@
         });
     });
 
-            // Preguntar el nombre
+          /*  // Preguntar el nombre
             var nombre = prompt("Ingresa tu nombre:");
 
             // Saludar con el nombre ingresado
-            alert("¡Hola " + nombre + "! ¿Cómo estás hoy?");
+            alert("¡Hola " + nombre + "! ¿Cómo estás hoy?");*/

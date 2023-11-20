@@ -210,3 +210,12 @@ main {
     }
 }
 
+/* Estilo del footer */
+
+.links a:hover {
+    background-color: #42ff00;
+    border: none;
+    color: #ae6bf2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: 1px solid red;
+}

@@ -218,13 +218,22 @@ aside>a {
 /* Social */
 
 .social {
-    margin: 50px;    
+    margin: 10px;    
 }
 .social p {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
+
+.links a:hover {
+    background-color: #42ff00;
+    border: none;
+    color: #ae6bf2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: 1px solid red;
+}
+
 .links {
     display: flex;
     align-items: center;
@@ -242,6 +251,7 @@ aside>a {
     background: #42ff00;
     padding: 30px 0;
     font-size: 14px;
+    border: 1px solid red;
  }
  .footer-container {
     display: grid;
@@ -252,7 +262,6 @@ aside>a {
  }
 .footer-container ul{
     margin: 0 auto;
-
 }
 .footer-container ul li {
     line-height: 1.8;
@@ -263,7 +272,7 @@ footer {
     padding: 30px 0;
     text-align: center;
     font-size: 14px ;
-
+    color: black;
 }
 /* Estilo de la galería de videos de Youtube */
 
