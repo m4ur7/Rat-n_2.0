@@ -35,13 +35,14 @@
         </div>
             <nav class="search">
                 <form action="/search" id="searchthis" method="get" style="display: inline;">
-                    <input id="search-box" name="q" type="text" placeholder="Buscar" />
-                    <input id="search-btn" type="submit"/><img src="img/lupa.png" alt="lupa">
+                    <input id="search-box" name="q" type="text" placeholder="Buscar">
+                    <input id="search-btn" type="submit"><img src="img/lupa.png" alt="lupa">
                 </form>
                 <hr>
             </nav>
     </header>
-    <main>       
+    <main>
+<!-- Formulario de Registros-->               
             <div class="container-form register">
                 <div class="information">
                     <div class="info-childs">
@@ -63,32 +64,32 @@
                         <form class="form">
                             <label>
                                 <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Nombres">
+                                <input type="text" placeholder="Nombres" required>
                             <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <label>
                                 <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Apellidos">
+                                <input type="text" placeholder="Apellidos" required>
                             <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <label>
                                 <i class="fas fa-at"></i>
-                                <input type="email" placeholder="Correo Electrónico">
+                                <input type="email" placeholder="Correo Electrónico" required>
                             <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <label>
                                 <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Usuario">
+                                <input type="text" placeholder="Usuario" required>
                                 <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <label>
                                 <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Contraseña">
+                                <input type="password" placeholder="Contraseña" required>
                             <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <label>
                                 <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Repetir la contraseña">
+                                <input type="password" placeholder="Repetir la contraseña" required>
                             <!--<i class="fas fa-times-circle" style="color: #000000;"></i>-->
                             </label>
                             <input type="submit" value="Registrarse">
@@ -97,12 +98,12 @@
                 </div>
             </div>
 
-
+<!-- formulario para inicio de sesión -->
             <div class="container-form login hide">
                 <div class="information">
                     <div class="info-childs">
                         <h2>Bienvenido nuevamente a Discos Ratón 2.0</h2>
-                        <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                        <p>Ingresa tus datos para iniciar sesión</p>
                         <input type="button" value="Registrarse" id="sign-up">
                     </div>
                 </div>
@@ -132,6 +133,9 @@
                     </div>
                 </div>
             </div>    
+<!--Formulario dirección de envio de pedido-->
+          
+            
     </main>
 
 
@@ -141,7 +145,7 @@
      
         <div class="footer-links">
             <div class="social">
-                <p><h2>Follow Discos Ratón</h2></p>
+                <h2>Follow Discos Ratón</h2>
                     <div class="links">
                         <a href="https://spotify.com/raton20"><i class="fab fa-spotify"></i></a>
                         <a href="https://apple.com/raton20"><i class="fab fa-apple"></i></a>

@@ -1,5 +1,5 @@
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
+const formulario = document.getElementById('form');
+const inputs = document.querySelectorAll('#form input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -11,7 +11,6 @@ const expresiones = {
 	codigopostal: /^\d{5,5}$/, // 5 numeros.
 	ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
 	pais: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
-	telefono: /^\d{7,16}$/ // 7 a 14 numeros.
 }
 
 const campos = {
@@ -24,7 +23,6 @@ const campos = {
 	codigopostal: false,
 	ciudad: false,
 	pais: false
-	telefono: false,
 }
 
 const validarFormulario = (e) => {
@@ -45,9 +43,18 @@ const validarFormulario = (e) => {
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
 		break;
-		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono');
-		break;
+		case "direccion":
+			validarCampo(expresiones.direccion, e.target, 'direccion');
+			break;
+		case "codigopostal":
+			validarCampo(expresiones.codigopostal, e.target, 'codigopostal');
+			break;
+		case "ciudad":
+			validarCampo(expresiones.ciudad, e.target, 'ciudad');
+			break;
+		case "pais";
+			validarCampo(expresiones.pais, e.target, 'pais');
+			break;
 	}
 }
 
@@ -114,3 +121,6 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+ // Si llegamos hasta aquí, el formulario es válido y podrías enviar los datos al servidor si es necesario.
+ alert('Formulario válido. ¡Registro exitoso!');
