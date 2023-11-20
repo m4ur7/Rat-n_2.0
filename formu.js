@@ -1,7 +1,7 @@
-const btnSignIn = document.getElementById("sign-in");
-      btnSignUp = document.getElementById("sign-up");
-      formRegister = document.querySelector(".register");
-      formLogin = document.querySelector(".login");
+    const btnSignIn = document.getElementById("sign-in");
+        btnSignUp = document.getElementById("sign-up");
+        formRegister = document.querySelector(".register");
+        formLogin = document.querySelector(".login");
 
     btnSignIn.addEventListener("click", (e) =>{
         formRegister.classList.add("hide");
@@ -41,3 +41,9 @@ const btnSignIn = document.getElementById("sign-in");
             alert('Formulario válido. ¡Registro exitoso!');
         });
     });
+
+            // Preguntar el nombre
+            var nombre = prompt("Ingresa tu nombre:");
+
+            // Saludar con el nombre ingresado
+            alert("¡Hola " + nombre + "! ¿Cómo estás hoy?");
