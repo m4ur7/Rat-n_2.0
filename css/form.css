@@ -9,20 +9,52 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
-/*Estilo del formulario */
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(img/radiohead-background.jpg);
+    background-image: url(/Raton_2.0/radiohead-background.jpg);
     background-size: cover;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Social */
+
+.social {
+    margin: 10px;    
+}
+.social p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    margin: 30px 10px;
+}
+.links a i {
+    font-size: 2.5rem;
+}
+
+.links a:hover {
+    background-color: #42ff00;
+    border: none;
+    color: #ae6bf2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/*Estilo del formulario */
+
 
 .container-form {
     display: flex;
@@ -217,5 +249,4 @@ main {
     border: none;
     color: #ae6bf2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    border: 1px solid red;
 }
