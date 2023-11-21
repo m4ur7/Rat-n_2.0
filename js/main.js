@@ -48,4 +48,27 @@ btnLeft.addEventListener('click', function(){
 
 setInterval(function(){
     Next();
-}, 4000);
+}, 4000);}, 4000);
+
+/* FUNCIONALIDAD PARA LA PESTAÑA DE ACCESIBILIDAD */
+
+// Funciones para las opciones de accesibilidad
+function aumentarTexto() {
+    // Lógica para aumentar el tamaño del texto
+}
+
+function disminuirTexto() {
+    // Lógica para disminuir el tamaño del texto
+}
+
+function escalaGrises() {
+    // Lógica para activar la escala de grises
+}
+
+// Agrega más funciones según tus necesidades
+
+// Mostrar/ocultar opciones de accesibilidad al hacer clic en el botón
+document.getElementById('btnAccesibilidad').addEventListener('click', function () {
+    var opciones = document.getElementById('opcionesAccesibilidad');
+    opciones.classList.toggle('oculto');
+});

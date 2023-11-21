@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>DiscosRatón_2.0</title>
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -55,6 +56,17 @@
                 <hr>
             </nav>
     </header>
+
+      <!-- Pestaña de accesibilidad -->
+      <div class="accesibilidad">
+        <button id="btnAccesibilidad">Accesibilidad</button>
+        <div id="opcionesAccesibilidad" class="oculto">
+            <button onclick="aumentarTexto()">Aumentar Texto</button>
+            <button onclick="disminuirTexto()">Disminuir Texto</button>
+            <button onclick="escalaGrises()">Escala de Grises</button>
+            <!-- Agrega más botones según tus necesidades -->
+        </div>
+    </div>
 
     <section>
         <!--Pegar desde aquí-->

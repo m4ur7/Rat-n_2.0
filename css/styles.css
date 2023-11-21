@@ -497,4 +497,11 @@ footer {
 	.formulario__btn {
 		width: 100%;
 	}
+}}}
+
+/* ESTILO PARA LA PESTAÑA DE ACCESIBILIDAD */
+
+/* Agrega estilos según tu diseño */
+.oculto {
+    display: none;
 }
