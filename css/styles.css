@@ -231,8 +231,9 @@ aside>a {
 }
 .social p {
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .links {
@@ -444,7 +445,7 @@ footer {
         border-radius: 4px;
     }
     .social p {       
-        font-size: 18px;
+        font-size: 15px;
     }
     .links a {
         margin: 0 8px;
@@ -514,7 +515,7 @@ footer {
         min-width: 250px;
     }
     .social p {       
-        font-size: 15px;
+        font-size: 13px;
     }
     .links a i {
         font-size: 1rem;
@@ -573,7 +574,7 @@ footer {
 	.formulario__btn {
 		width: 100%;
 	}
-}}}
+}
 
 /* ESTILO PARA LA PESTAÑA DE ACCESIBILIDAD */
 
