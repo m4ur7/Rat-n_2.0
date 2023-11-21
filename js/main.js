@@ -48,7 +48,7 @@ btnLeft.addEventListener('click', function(){
 
 setInterval(function(){
     Next();
-}, 4000);}, 4000);
+}, 4000);
 
 /* FUNCIONALIDAD PARA LA PESTAÑA DE ACCESIBILIDAD */
 
