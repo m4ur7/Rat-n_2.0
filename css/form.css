@@ -5,11 +5,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(/Raton_2.0/img/radiohead-background.jpg);
-    background-size: cover;
-}
 
 main {
     display: flex;
