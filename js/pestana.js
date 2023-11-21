@@ -108,9 +108,10 @@ function fuenteLegible() {
 
 // Función para restablecer los valores por defecto
 function restablecerValores() {
-    // Elimina todas las clases modificadoras del cuerpo del documento
-    document.body.className = '';
+    // Elimina las clases modificadoras del cuerpo del documento
+    document.body.classList.remove('escala-grises', 'alto-contraste', 'contraste-negativo', 'fondo-oscuro', 'subrayar-enlaces', 'fuente-legible');
 }
+
 
 
 // Mostrar/ocultar opciones de accesibilidad al hacer clic en el botón
