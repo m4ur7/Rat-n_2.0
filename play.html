@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Play CSS-->
+    <link rel="stylesheet" href="play.css">
+
+
     <title>DiscosRatón_2.0</title>
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -25,10 +29,10 @@
             <a title="logoraton" href="pre-escucha3.html"><img src="img/logo.png" alt="logoraton" class="nav-brand"></a>
             <ul class="nav-menu">
                 <li>
-                    <a href="#">ARTISTAS A-Z</a>
+                    <a href="comprar2.html">ARTISTAS A-Z</a>
                 </li>
                 <li>
-                    <a href="#">NOVEDADES</a>
+                    <a href="comprar2.html">NOVEDADES</a>
                 </li>
                 <li>
                     <a href="play.html">JUEGA</a>
@@ -39,10 +43,10 @@
             </ul>
             <ul class="nav-menu-right">
                 <li>
-                    <a href="cart.html">INICIAR SESIÓN</a>
+                    <a href="comprar2.html">INICIAR SESIÓN</a>
                 </li>
                 <li>
-                    <a id="cart" href="cart.html">CESTA<i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
+                    <a href="comprar2.html">CESTA</a>
                 </li>
             </ul>
         </nav>
@@ -54,64 +58,28 @@
                     <input id="search-box" name="q" type="text" placeholder="Buscar" />
                     <input id="search-btn" type="submit"/><img src="img/lupa.png" alt="lupa">
                 </form>
-        
+                <hr>
             </nav>
     
     <header>
     </header>
-    <div>
-
-    <section class="pre-escucha">
-        <!--Pegar desde aquí-->
-        <article class="post5">
-            <a title="Radiohead" href="cesta4.html"><img src="img/Radiohead.jpg" alt="Radiohead"></a>            
-        </article>
-        
-        <article class="post6">
-            <aside>
-                <h1>Pablo Honey</h1>
-                <h2>Radiohead</h2>
-                <p>XL779</p>
-                <p>22 Febrero 1993</p>
-                <hr>
-            </aside>
-            <aside>
-                <h2>Vinilo, 12”</h2><h3>26.00 €</h3>               
-                <a title="cesta" href="cesta4.html"><img src="img/cesta.png" alt="cesta"></a>
-                <br>
-                <hr>
-            </aside>
-            <aside>
-                <h2>Descarga</h2><h3>9.99 €</h3>
-                <p>Seleccionar formato</p>
-                <img src="img/mp3.png" alt="mp3">     <img src="img/wav.png" alt="wav">
-                <h6>320 kbps, LAME encode</h6>
-                <a title="cesta" href="cesta4.html"><img src="img/cesta.png" alt="cesta"></a>
-                <br>
-                <hr>
-            </aside>
-            <br>
-            
-        </article>
-    </div>
-<br>   
-<hr>
-<br>
-<br>
-        <!--Compra-->
-        <div>
-        
-        <main>
-
-            <section id="productos-container">
-            </section>
-
-        </main>
+    <div class="cuerpo">
+    <div class="container2">
+        <div id="question-container" class="hide">
+          <div id="question">Question</div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
         </div>
- 
-        
-        <!--Pegar hasta aquí-->
-    </section>
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn">Comenzar</button>
+          <button id="next-btn" class="next-btn btn hide">Siguiente</button>
+        </div>
+      </div>
+    </div>
     <section class="social">
 
         <p>Follow Discos Ratón</p>
@@ -220,9 +188,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom Js-->
     <script src="main.js"></script>
-    <!--Js Carrito-->
-    <script src="./js/vinilos.js"></script>
-    <script src="./js/cartService.js" defer></script>
-    <script src="./js/index.js" defer></script>
+    <!--Play JS-->
+    <script src="play.js"></script>
 </body>
 </html>

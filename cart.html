@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Cart CSS-->
+    <link rel="stylesheet" href="cart.css">
     <title>DiscosRatón_2.0</title>
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -22,7 +24,7 @@
 
     <div class="container">
         <nav class="nav-main">
-            <a title="logoraton" href="pre-escucha3.html"><img src="img/logo.png" alt="logoraton" class="nav-brand"></a>
+            <a title="logoraton" href="cesta4.html"><img src="img/logo.png" alt="logoraton" class="nav-brand"></a>
             <ul class="nav-menu">
                 <li>
                     <a href="#">ARTISTAS A-Z</a>
@@ -39,10 +41,10 @@
             </ul>
             <ul class="nav-menu-right">
                 <li>
-                    <a href="cart.html">INICIAR SESIÓN</a>
+                    <a href="pre-escucha3.html">INICIAR SESIÓN</a>
                 </li>
                 <li>
-                    <a id="cart" href="cart.html">CESTA<i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
+                    <a id="cart" href="#">CESTA<i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
                 </li>
             </ul>
         </nav>
@@ -54,64 +56,28 @@
                     <input id="search-box" name="q" type="text" placeholder="Buscar" />
                     <input id="search-btn" type="submit"/><img src="img/lupa.png" alt="lupa">
                 </form>
-        
+                
             </nav>
     
     <header>
     </header>
     <div>
-
-    <section class="pre-escucha">
-        <!--Pegar desde aquí-->
-        <article class="post5">
-            <a title="Radiohead" href="cesta4.html"><img src="img/Radiohead.jpg" alt="Radiohead"></a>            
-        </article>
+    <main>
         
-        <article class="post6">
-            <aside>
-                <h1>Pablo Honey</h1>
-                <h2>Radiohead</h2>
-                <p>XL779</p>
-                <p>22 Febrero 1993</p>
-                <hr>
-            </aside>
-            <aside>
-                <h2>Vinilo, 12”</h2><h3>26.00 €</h3>               
-                <a title="cesta" href="cesta4.html"><img src="img/cesta.png" alt="cesta"></a>
-                <br>
-                <hr>
-            </aside>
-            <aside>
-                <h2>Descarga</h2><h3>9.99 €</h3>
-                <p>Seleccionar formato</p>
-                <img src="img/mp3.png" alt="mp3">     <img src="img/wav.png" alt="wav">
-                <h6>320 kbps, LAME encode</h6>
-                <a title="cesta" href="cesta4.html"><img src="img/cesta.png" alt="cesta"></a>
-                <br>
-                <hr>
-            </aside>
-            <br>
-            
-        </article>
+		<p id="carrito-vacio"><a href="cesta4.html"></a></p>
+		<section id="cart-container">
+		</section>
+    
+    
+        <section id="totales">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: € <span id="precio">0</span></p>
+            <a href="cesta4.html"><button>Comprar</button></a>
+            <button id="reiniciar">Reiniciar</button>
+        </section>
+    
+    </main>
     </div>
-<br>   
-<hr>
-<br>
-<br>
-        <!--Compra-->
-        <div>
-        
-        <main>
-
-            <section id="productos-container">
-            </section>
-
-        </main>
-        </div>
- 
-        
-        <!--Pegar hasta aquí-->
-    </section>
     <section class="social">
 
         <p>Follow Discos Ratón</p>
@@ -223,6 +189,6 @@
     <!--Js Carrito-->
     <script src="./js/vinilos.js"></script>
     <script src="./js/cartService.js" defer></script>
-    <script src="./js/index.js" defer></script>
+	<script src="./js/cart.js" defer></script>
 </body>
 </html>
