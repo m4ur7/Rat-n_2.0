@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>DiscosRatón_2.0</title>
-    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <title>Discos Ratón 2.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 <body>
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-
-
-
-    <div class="container">
-        <nav class="nav-main">
-            <a title="logoraton" href="index.html"><img src="img/logo.png" alt="logoraton" class="nav-brand"></a>
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">ARTISTAS A-Z</a>
-                </li>
-                <li>
-                    <a href="#">NOVEDADES</a>
-                </li>
-                <li>
-                    <a href="play.html">JUEGA</a>
-                </li>
-                <li>
-                    <a href="watch.html">VER</a>
-                </li>
-            </ul>
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="pre-escucha3.html">INICIAR SESIÓN</a>
-                </li>
-                <li>
-                    <a href="pre-escucha3.html">CESTA</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <nav class="search">
-
-        <form action="/search" id="searchthis" method="get" style="display: inline;">
-            <input id="search-box" name="q" type="text" placeholder="Buscar" />
-            <input id="search-btn" type="submit" /><img src="img/lupa.png" alt="lupa">
-        </form>
-    </nav>
-
     <header>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="container">
+            <nav class="nav-main">
+                <a title="logoraton" href="index.html"><img src="img/logo.png" alt="logoraton" class="nav-brand"></a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">ARTISTAS A-Z</a>
+                    </li>
+                    <li>
+                        <a href="#">NOVEDADES</a>
+                    </li>
+                    <li>
+                        <a href="play.html">JUEGA</a>
+                    </li>
+                    <li>
+                        <a href="watch.html">VER</a>
+                    </li>
+                </ul>
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="form.html">INICIAR SESIÓN</a>
+                    </li>
+                    <li>
+                        <a href="pre-escucha3.html">CESTA</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="search">
+            <form action="/search" id="searchthis" method="get" style="display: inline;">
+                <input id="search-box" name="q" type="text" placeholder="Buscar" />
+                <input id="search-btn" type="submit" /><img src="img/lupa.png" alt="lupa">
+            </form>
+        </nav>
     </header>
+     <!-- Pestaña de accesibilidad -->
+     <div class="accesibilidad">
+        <div id="btnAccesibilidad"><i class="fa-solid fa-universal-access fa-2xl"></i></div>
+        <div id="opcionesAccesibilidad" class="oculto">
+            <button onclick="aumentarTexto()">Aumentar Texto</button>
+            <button onclick="disminuirTexto()">Disminuir Texto</button>
+            <button onclick="escalaGrises()">Escala de Grises</button>
+            <button onclick="altoContraste()">Alto Contraste</button>
+            <button onclick="contrasteNegativo()">Contraste Negativo</button>
+            <button onclick="fondoOscuro()">Fondo Oscuro</button>
+            <button onclick="subrayarEnlaces()">Subrayar Enlaces</button>
+            <button onclick="fuenteLegible()">Fuente Legible</button>
+            <button onclick="reestablecer()">Reestablecer</button>
+        </div>
+    </div>
     <!--Carrusel-->
     <div class="container-slider">
         <div class="slider" id="slider">
@@ -107,7 +112,6 @@
     <!--Compra-->
     <section class="compra">
         <article class="post4">
-            
             <a title="Radiohead" href="pre-escucha3.html"><img src="img/Radiohead.jpg" alt="Radiohead"></a>
             <h2>RADIOHEAD</h2>
             <p>Pablo Honey</p>
@@ -126,7 +130,6 @@
             <img src="img/play.png" alt="play"> <span>Reproducir</span>
         </article>
         <article class="post4">
-        
             <a title="DizzeeRascal" href="#"><img src="img/DizzeeRascal.jpg" alt="DizzeeRascal"></a>
             <h2>DIZZIE RASCAL</h2>
             <p>Boy In Da Corner (20 Anniversary Edition)</p>
@@ -145,7 +148,6 @@
             <img src="img/play.png" alt="play"> <span>Reproducir</span>
         </article>
         <article class="post4">
-
             <a title="KingKrule" href="#"><img src="img/KingKrule.jpg" alt="KingKrule"></a>
             <h2>KING KRULE</h2>
             <p>Space Heavy</p>
@@ -164,7 +166,6 @@
             <img src="img/play.png" alt="play"> <span>Reproducir</span>
         </article>
         <article class="post4">
-
             <a title="TheSmile" href="#"><img src="img/TheSmile.jpg" alt="TheSmile"></a>
             <h2>THE SMILE</h2>
             <p>A Light For Atracting Attencion</p>
@@ -182,119 +183,80 @@
             <p>Kish Kash</p>
             <img src="img/play.png" alt="play"> <span>Reproducir</span>
         </article>
-
-
-
     </section>
-
-    <!--Redes Sociales-->
-    <section class="social">
-
-        <p>Follow Discos Ratón</p>
-        <div class="links">
-            <a href="#">
-                <i class="fab fa-spotify"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-apple"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </section>
-
-    <div class="footer-links">
-        <div class="footer-container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Textos Legales</h3>    
-                    </a>
-                </li>
-                <li>
-                    <a href="">Política de privacidad</a>
-                </li>
-                <li>
-                    <a href="">Términos y condiciones</a>
-                </li>
-                <li>
-                    <a href="">Política de cookies</a>
-                </li>
-                <li>
-                    <a href="">Soporte y contacto</a>
-                </li>
-                <li>
-                    <a href="">Centro de ayuda</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>¿Quieres estar al día?</h3>    
-                    </a>
-                </li>
-                <li>
-                    <a href="">Pon tu email ____________________</a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>¿Quieres saber más?</h3>    
-                    </a>
-                </li>
-                <li>
-                    <a href="">Discos Ratón</a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
 
     <footer>
-        <h3>Discos Ratón ©Copyright 2023</h3>
+        <div class="footer-links"> 
+            <div class="footer-container"> 
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>Textos Legales</h3>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">Política de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="">Política de cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Soporte y contacto</a>
+                    </li>
+                    <li>
+                        <a href="">Centro de ayuda</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2>Follow Discos Ratón</h2>
+                        <div class="links">
+                            <a href="https://google.com/raton20"><i class="fab fa-google fa-lg"></i></a>
+                            <a href="https://spotify.com/raton20"><i class="fab fa-spotify fa-lg"></i></a>
+                            <a href="https://apple.com/raton20"><i class="fab fa-apple fa-lg"></i></a>
+                            <a href="https://youtube.com/raton20"><i class="fab fa-youtube-square fa-lg"></i></a>
+                            <a href="https://instagram.com/raton20"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://facebook.com/raton20"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://twitter.com/raton20"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                            <a href="https://linkedin.com/raton20"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                         </div>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>¿Quieres saber más?</h3>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">Discos Ratón</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>¿Quieres estar al día?</h3>    
+                        </a>
+                        <li>
+                            <a href="">Pon tu email ____________________</a>
+                        </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <h3>Discos Ratón ©Copyright 2023</h3>
+        </div>   
     </footer>
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom Js-->
-    <script src="main.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/pestana.js"></script>
 </body>
 </html>

@@ -1,11 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-}
 
-body {
+*body {
     font-family: 'Montserrat', sans-serif;
     background-image: url(/Raton_2.0/img/radiohead-background.jpg);
     background-size: cover;
@@ -252,3 +246,83 @@ a {
     color: #ae6bf2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
+
+/* Estilos de la pestaña de accesibilidad */
+.accesibilidad {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #ae6bf2;
+    color: #42ff00;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+#opcionesAccesibilidad {
+    position: fixed;
+    top: 50%;
+    right: -20px; /* Inicialmente fuera de la pantalla */
+    transform: translateY(-50%);
+    background-color: #ae6bf2;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -85px;
+
+}
+
+/* Estilos de los botones de accesibilidad */
+#accesibilidad button {
+    background-color: #42ff00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+/* Agrega estilos según tu diseño */
+.oculto {
+    display: none;
+}
+
+.fa-2xl {
+    font-size: 2em;
+    vertical-align: -0.1875em;
+    line-height: 0.9em;
+}
+
+.escala-grises {
+    filter: grayscale(100%);
+}
+
+.alto-contraste {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.contraste-negativo {
+    filter: invert(100%);
+}
+
+.fondo-oscuro {
+    background-color: #000;
+    color: #fff;
+}
+
+.subrayar-enlaces a {
+    text-decoration: underline;
+}
+
+.fuente-legible {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente según tus preferencias */
+    line-height: 1.5;
+}
+

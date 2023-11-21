@@ -42,6 +42,22 @@
                 <hr>
             </nav>
     </header>
+  <!-- Pestaña de accesibilidad -->
+    <div class="accesibilidad">
+        <div id="btnAccesibilidad"><i class="fa-solid fa-universal-access fa-2xl"></i></div>
+        <div id="opcionesAccesibilidad" class="oculto">
+            <button onclick="aumentarTexto()">Aumentar Texto</button>
+            <button onclick="disminuirTexto()">Disminuir Texto</button>
+            <button onclick="escalaGrises()">Escala de Grises</button>
+            <button onclick="altoContraste()">Alto Contraste</button>
+            <button onclick="contrasteNegativo()">Contraste Negativo</button>
+            <button onclick="fondoOscuro()">Fondo Oscuro</button>
+            <button onclick="subrayarEnlaces()">Subrayar Enlaces</button>
+            <button onclick="fuenteLegible()">Fuente Legible</button>
+            <button onclick="reestablecer()">Reestablecer</button>
+        </div>
+    </div>
+
     <main>
 <!-- Formulario de Registros-->               
             <div class="container-form register">
@@ -209,5 +225,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom Js-->
     <script src="js/form.js"></script>
+    <script src="js/pestana.js"></script>
 </body>
 </html>
