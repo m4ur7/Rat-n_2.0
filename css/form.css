@@ -259,6 +259,7 @@ a {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     cursor: pointer;
+    transition: right 0.3s ease; /* Agregando transición */
 }
 
 #opcionesAccesibilidad {
@@ -286,7 +287,6 @@ a {
     width: 100%;
     text-align: center;
     cursor: pointer;
-    border: 1px solid red;
 }
 
 /* Agrega estilos según tu diseño */
