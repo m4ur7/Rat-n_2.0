@@ -7,13 +7,15 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url(/Raton_2.0/img/radiohead-background.jpg);
+    background-size: cover;
 }
 
 main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+  /*  height: 100vh;*/
     background-image: url(/Raton_2.0/radiohead-background.jpg);
     background-size: cover;
 }
