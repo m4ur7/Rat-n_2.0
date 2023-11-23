@@ -1,0 +1,10 @@
+diff a/cesta4.html b/cesta4.html	(rejected hunks)
+@@ -31,7 +31,7 @@
+                     <a href="#">NOVEDADES</a>
+                 </li>
+                 <li>
+-                    <a href="#">MERCHAN</a>
++                    <a href="play.html">JUEGA</a>
+                 </li>
+                 <li>
+                     <a href="watch.html">VER</a>
