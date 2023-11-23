@@ -259,7 +259,6 @@ a {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     cursor: pointer;
-    transition: right 0.3s ease; /* Agregando transición */
 }
 
 #opcionesAccesibilidad {
