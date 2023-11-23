@@ -119,3 +119,20 @@ document.getElementById('btnAccesibilidad').addEventListener('click', function (
     var opciones = document.getElementById('opcionesAccesibilidad');
     opciones.classList.toggle('oculto');
 });
+
+function aceptarCookies() {
+    // Guarda la elección del usuario, puedes usar cookies o localStorage
+    // Aquí uso localStorage como ejemplo
+    localStorage.setItem('cookiesAceptadas', 'true');
+
+    // Oculta la advertencia de cookies
+    document.querySelector('.cookie-warning').style.display = 'none';
+}
+
+// Verifica si el usuario ya aceptó las cookies al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('cookiesAceptadas') === 'true') {
+        // Si ya aceptó, oculta la advertencia
+        document.querySelector('.cookie-warning').style.display = 'none';
+    }
+});

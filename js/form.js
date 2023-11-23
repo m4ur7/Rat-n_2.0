@@ -42,8 +42,49 @@
         });
     });
 
-          /*  // Preguntar el nombre
-            var nombre = prompt("Ingresa tu nombre:");
+    function abrirVentana() {
+        var ventana = window.open('', 'Saludo', 'width=400,height=200');
+        ventana.document.write(`
+            <html>
+            <head>
+                <title>Saludo</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+                <div class="container">
+                    <label for="nombre">Ingresa un nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe un nombre">
+                    <button onclick="generarSaludo()">Saludar</button>
+                    <p id="saludo"></p>
+                </div>
+            </body>
+            </html>
+        `);
+    }
+    
+    var ventana;
 
-            // Saludar con el nombre ingresado
-            alert("¡Hola " + nombre + "! ¿Cómo estás hoy?");*/
+    function abrirVentana() {
+        ventana = window.open('', 'Saludo', 'width=400,height=200');
+        ventana.document.write(`
+            <html>
+            <head>
+                <title>Saludo</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+                <div class="container">
+                    <label for="nombre">Ingresa un nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe un nombre">
+                    <button onclick="generarSaludo()">Saludar</button>
+                    <p id="saludo"></p>
+                </div>
+            </body>
+            </html>
+        `);
+    }
+    
+    const nombre = prompt("Epa, ¿cómo te llamas?");
+        alert(`¡Hola, ${nombre}! ¿Todo bien? Bienvenido, Ratón!`);
+    
+    
