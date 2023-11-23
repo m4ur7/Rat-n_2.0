@@ -1,4 +1,5 @@
-# Raton_2.0
+# Raton_2.0![favicon](https://github.com/m4ur7/Raton_2.0/assets/147191718/53d0b6cb-82fe-4239-93ac-f35d03ed4e3f)
+
 Página web con Html, CSS y JavaScript.
 Segunda versión del proyecto Ratón. Una tienda online de discos de Vinilo a la cual se le ha añadido dinamismo con JavaScript.
 
